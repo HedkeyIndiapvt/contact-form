@@ -2,7 +2,7 @@
 // CONFIG
 // ============================================================
 // Admin email that receives every form submission.
-const ADMIN_EMAIL = "hedkeytaining@gmail.com";
+const ADMIN_EMAIL = "hedkeytraining@gmail.com";
 
 // FormSubmit AJAX endpoint (sends the email from the frontend, no backend needed).
 // NOTE: After activation you can replace the email below with the random
