@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrapper">
+    <section class="card">
+      <h1>Get in touch</h1>
+      <p class="subtitle">Fill in the form and we'll get back to you soon.</p>
+
+      <form id="contactForm" novalidate>
+        <!-- Honeypot field (hidden) to block spam bots -->
+        <input type="text" name="_honey" id="honey" tabindex="-1" autocomplete="off" class="hp" />
+
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required />
+          <small class="error" id="nameError"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+          <small class="error" id="messageError"></small>
+        </div>
+
+        <button type="submit" id="submitBtn">
+          <span class="btn-text">Send Message</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+
+        <div id="status" class="status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
